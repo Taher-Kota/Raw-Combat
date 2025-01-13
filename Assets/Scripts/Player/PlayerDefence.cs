@@ -20,12 +20,12 @@ public class PlayerDefence : MonoBehaviour
 
     void Check_Defend()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             playerAnim.Defence();
             isDefend = true;
         }
-        if (Input.GetKeyUp(KeyCode.Q))
+        if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             isDefend= false;
             playerAnimator.speed = 1f;
